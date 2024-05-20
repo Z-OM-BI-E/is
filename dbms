@@ -1,0 +1,88 @@
+CREATE TRIGGER trbook BEFORE INSERT ON Books FOR EACH ROW
+SET new.Price=new.Price + 20;
+INSERT INTO Books VALUES (106, 'Frankenstein', 'Mary shelly',5,130);
+SELECT * FROM Books;
+
+
+SET SERVER OUTPUT ON;
+DECLARE
+x number (5);
+y number (5);
+2 number (7);
+BEGIN
+x:=10;
+y:=20;
+z:=x+y:
+dbms_output.put-line ('Sum is '||z);
+END;
+/
+
+
+
+SET SERVER OUTPUT ON:
+DECLARE
+n number;
+fact number :=1;
+i number;
+BEGIN
+n:=&n;
+for i in 1..n
+LOOP
+fact:=fact*i
+end loop;
+dbms_output.put-line ('Factorial = '||fact);
+end;
+/
+
+
+
+
+SET SERVER OUTPUT ON;
+DECLARE
+a number:=10;
+b number:=12;
+C number:=6;
+BEGIN
+dbms_output.put-line ('a='||a|| ,'b='|| b ||,' c = '||c);
+if a>b AND a>c
+then
+dbms_output.put_line ('a is the greatest');
+else
+if b > a AND b>c
+then
+dbms_output.put_line ('b is the greatest');
+else
+dbms_output.put_line (' c is the greatest')
+end if
+end if
+END;
+/
+
+
+
+
+SET SERVER OUTPUT ON;
+DECLARE
+n number:=407;
+8 number:=0;
+r number,
+len number;
+m number;
+BEGIN
+m :=n
+len = length (to_char(n));
+while n>0
+LOOP
+r:= mod (n,10);
+s:=s+ power (n, len);
+n:=trunc (n / 10)
+end loop;
+if m=S
+then
+dbms_output.put_line ('Armstrong Number');
+else
+dbms_output.put_line (' Not Armstrong Number ');
+end if;
+END;
+/
+  
