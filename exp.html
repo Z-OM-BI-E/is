@@ -1,0 +1,1803 @@
+Basic HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Tags Demonstration</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Dark background */
+            color: #d9d2cc; /* Light text */
+            transition: background-color 0.5s, color 0.5s;
+        }
+        header {
+            background-color: #d9b18e; /* Camel background */
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 1s;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2c2c2c; /* Darker section background */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            color: #d9b18e; /* Camel color for headings */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            animation: slideIn 0.5s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #d9b18e; /* Footer color */
+            padding: 10px 0;
+            text-align: center;
+        }
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Tags Demonstration</h1>
+    </header>
+    <div class="container">
+        <section>
+            <h2>1. <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></h2>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </section>
+        <section>
+            <h2>2. <code>&lt;p&gt;</code></h2>
+            <p>This is a paragraph demonstrating the <code>&lt;p&gt;</code> tag.</p>
+        </section>
+        <section>
+            <h2>3. <code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code></h2>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+                <li>List item 3</li>
+            </ul>
+        </section>
+        <section>
+            <h2>4. <code>&lt;ol&gt;</code> and <code>&lt;li&gt;</code></h2>
+            <ol>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+        </section>
+        <section>
+            <h2>5. <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code></h2>
+            <div>This is a <span style="color: #d9b18e;">span</span> inside a <div>.</div>
+        </section>
+        <section>
+            <h2>6. <code>&lt;a&gt;</code></h2>
+            <p>Visit <a href="https://www.w3schools.com" style="color: #d9b18e;">W3Schools</a> for more information.</p>
+        </section>
+        <section>
+            <h2>7. <code>&lt;img&gt;</code></h2>
+            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTSwUeBM_ry3qWx4QCDkEmcCIcI0DI7Jqn8g&salt="Placeholder Image" style="display: block; margin: 0 auto; border-radius: 8px;">
+        </section>
+        <section>
+            <h2>8. <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, and <code>&lt;th&gt;</code></h2>
+            <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                <thead>
+                    <tr>
+                        <th style="background-color: #723e31; color: #f2f1ef;">Header 1</th>
+                        <th style="background-color: #723e31; color: #f2f1ef;">Header 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #d9d2cc; text-align: center;">Cell 1</td>
+                        <td style="border: 1px solid #d9d2cc; text-align: center;">Cell 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>9. <code>&lt;form&gt;</code></h2>
+            <form style="background-color: #3b3b3b; padding: 10px; border-radius: 5px;">
+                <label for="name" style="color: #d9b18e;">Name:</label>
+                <input type="text" id="name" name="name" style="width: 100%; padding: 5px; margin-bottom: 10px;">
+                <button type="submit" style="background-color: #d9b18e; color: #723e31; padding: 5px; border: none; border-radius: 5px;">Submit</button>
+            </form>
+        </section>
+        <section>
+            <h2>10. <code>&lt;blockquote&gt;</code></h2>
+            <blockquote style="border-left: 4px solid #d9b18e; padding-left: 10px; color: #d9d2cc;">
+                This is a blockquote example.
+            </blockquote>
+        </section>
+        <section>
+            <h2>11. <code>&lt;code&gt;</code></h2>
+            <p>Here is some <code>inline code</code> within a paragraph.</p>
+        </section>
+        <section>
+            <h2>12. <code>&lt;strong&gt;</code> and <code>&lt;em&gt;</code></h2>
+            <p>This text is <strong>strong</strong> and this text is <em>emphasized</em>.</p>
+        </section>
+        <section>
+            <h2>13. <code>&lt;section&gt;</code></h2>
+            <section>
+                <h3>This is a section</h3>
+                <p>Content within a section.</p>
+            </section>
+        </section>
+        <section>
+            <h2>14. <code>&lt;article&gt;</code></h2>
+            <article>
+                <h3>This is an article</h3>
+                <p>Content of the article goes here.</p>
+            </article>
+        </section>
+        <section>
+            <h2>15. <code>&lt;header&gt;</code> and <code>&lt;footer&gt;</code></h2>
+            <header>
+                <h3>Header Content</h3>
+            </header>
+            <footer>
+                <p>Footer Content</p>
+            </footer>
+        </section>
+        <section>
+            <h2>16. <code>&lt;nav&gt;</code></h2>
+            <nav>
+                <p>Navigation Links:</p>
+                <a href="#" style="color: #d9b18e;">Home</a> | 
+                <a href="#" style="color: #d9b18e;">About</a> | 
+                <a href="#" style="color: #d9b18e;">Contact</a>
+            </nav>
+        </section>
+        <section>
+            <h2>17. <code>&lt;iframe&gt;</code></h2>
+            <iframe src="Media_File"></iframe>
+        </section>
+        <section>
+            <h2>18. <code>&lt;video&gt;</code></h2>
+            <video width="300" controls style="display: block; margin: 20px auto;">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section>
+            <h2>19. <code>&lt;audio&gt;</code></h2>
+            <audio controls style="display: block; margin: 20px auto;">
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Your browser does not support the audio tag.
+            </audio>
+        </section>
+        <section>
+            <h2>20. <code>&lt;svg&gt;</code></h2>
+            <svg width="100" height="100" style="display: block; margin: 20px auto;">
+                <circle cx="50" cy="50" r="40" fill="#d9b18e" />
+            </svg>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 HTML5 Tags Demonstration. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------
+DEPT EVENT
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cybersecurity Event 2024</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Dark background */
+            color: #d9d2cc; /* Light text */
+            transition: background-color 0.5s, color 0.5s;
+        }
+        header {
+            background-color: #d9b18e; /* Camel background */
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .head {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #723e31; /* Dark brown links */
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #a67564; /* Hover color */
+            transform: scale(1.1);
+        }
+        main {
+            padding: 20px 0;
+        }
+        .content-section {
+            margin: 40px 0;
+            background-color: #2c2c2c; /* Darker section background */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            animation: slideIn 0.5s forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        h2 {
+            color: #d9b18e; /* Camel color for headings */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            line-height: 1.6;
+        }
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .schedule-table th,
+        .schedule-table td {
+            border: 1px solid #d9d2cc; /* Light border */
+            padding: 12px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .schedule-table th {
+            background-color: #723e31; /* Dark brown for headers */
+            color: #f2f1ef; /* Light text for contrast */
+        }
+        .schedule-table tr:hover {
+            background-color: #a67564; /* Highlight on row hover */
+        }
+        .speakers {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .speaker {
+            text-align: center;
+            margin: 20px;
+            flex: 1 1 200px; /* Responsive speaker boxes */
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+            animation-delay: 0.5s; /* Delay for staggered effect */
+        }
+        .speaker-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .registration {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .registration form {
+            display: inline-block;
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .registration label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: 500;
+        }
+        .registration input {
+            padding: 10px;
+            border: 1px solid #d9d2cc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #3b3b3b; /* Input background */
+            color: #d9d2cc; /* Input text color */
+        }
+        .registration button {
+            background-color: #d9b18e; /* Button color */
+            color: #723e31;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .registration button:hover {
+            background-color: #a67564; /* Button hover color */
+        }
+        footer {
+            background-color: #d9b18e; /* Footer color */
+            padding: 20px 0;
+            text-align: center;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #723e31; /* Dark brown for social icons */
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #a67564; /* Hover color for icons */
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="head">Cybersecurity Event 2024</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#registration">Registration</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="content-section">
+            <div class="container">
+                <h2>About the Event</h2>
+                <p>
+                    Join us for an exciting day dedicated to the latest in cybersecurity, featuring industry leaders, workshops, and discussions on pressing cybersecurity challenges.
+                </p>
+                <p>Date: April 15, 2024</p>
+                <p>Time: 9:00 AM - 5:00 PM</p>
+            </div>
+        </section>
+        <section id="schedule" class="content-section">
+            <div class="container">
+                <h2>Event Schedule</h2>
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00 AM</td>
+                            <td>Opening Remarks</td>
+                            <td>Auditorium</td>
+                        </tr>
+                        <tr>
+                            <td>10:00 AM</td>
+                            <td>Keynote Speech: Future of Cybersecurity</td>
+                            <td>Main Hall</td>
+                        </tr>
+                        <tr>
+                            <td>12:00 PM</td>
+                            <td>Workshop: Ethical Hacking</td>
+                            <td>Lab 1</td>
+                        </tr>
+                        <tr>
+                            <td>02:00 PM</td>
+                            <td>Panel Discussion: Emerging Threats</td>
+                            <td>Conference Room</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="speakers" class="content-section">
+            <div class="container">
+                <h2>Featured Speakers</h2>
+                <div class="speakers">
+                    <div class="speaker">
+                        <img src="https://cdn.britannica.com/99/124299-050-4B4D509F/Linus-Torvalds-2012.jpg" alt="Speaker 1" class="speaker-image" />
+                        <h3>Linus Torvalds</h3>
+                        <p>Creator of Linux Kernel</p>
+                    </div>
+                    <div class="speaker">
+                        <img src="https://i.pinimg.com/474x/0c/99/0c/0c990cb200ba915e856bcdc78c3c2031.jpg" alt="Speaker 2" class="speaker-image" />
+                        <h3>Hamza Bendelladj</h3>
+                        <p>Algerian Cybercriminal</p>
+                    </div>
+                    <div class="speaker">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Dan_Kaminsky_cropped.jpg/640px-Dan_Kaminsky_cropped.jpg" alt="Speaker 3" class="speaker-image" />
+                        <h3>Dan Kaminsky</h3>
+                        <p>Renowned Security Researcher</p>
+                    </div>
+                    <div class="speaker">
+                        <img src="https://cyberscoop.com/wp-content/uploads/sites/3/2016/08/Katie.jpg?w=566" alt="Speaker 4" class="speaker-image" />
+                        <h3>Katie Moussouris</h3>
+                        <p>Expert in Vulnerability Disclosure</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="registration" class="content-section">
+            <div class="container">
+                <h2>Registration</h2>
+                <div class="registration">
+                    <p>To register for the event, please fill out the form below:</p>
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                        <label for="payment">Payment Method:</label>
+                        <select id="payment" name="payment">
+                            <option value="credit-card">Credit Card</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="bank-transfer">Bank Transfer</option>
+                        </select>
+                        <button type="submit">Register Now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cybersecurity Event. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+-------------------------------------------------------------------------------------------
+Automation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatic Image Slideshow</title>
+    <style>
+        body {
+            background-color: #021c41; /* Dark background */
+            color: #d89b65; /* Light text */
+            font-family: "Courier New", Courier, monospace;
+            text-align: center;
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center horizontally */
+            gap: 50px;
+            flex-direction: column;
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Full viewport height */
+            margin: 0; /* Remove default margin */
+            animation: fadeIn 1s ease-in-out; /* Fade-in for the whole body */
+        }
+        h1 {
+            color: #a6445d; /* Title color */
+            animation: slideDown 0.5s ease-in-out; /* Slide down effect */
+        }
+        .container {
+            width: 100%;
+        }
+        #slideshow {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            height: 400px; /* Specify height for the slideshow */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+        }
+        #slideshow img {
+            width: 100%;
+            height: 100%; /* Ensure images fill the container */
+            position: absolute;
+            top: 0; /* Set top offset */
+            left: 0; /* Set left offset */
+            opacity: 0;
+            transition: opacity 1s ease-in-out; /* Fade-in effect */
+        }
+        #slideshow img.active {
+            opacity: 1; /* Show the active image */
+            animation: zoomIn 1s ease-in-out; /* Zoom in effect for active image */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.95);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Automatic Image Slideshow</h1>
+    <div class="container">
+        <div id="slideshow">
+            <img src="Image_1" />
+		 <img src="Image_2" />
+            <img src="Image_3" />
+        </div>
+    </div>
+    <script>
+        let currentIndex = 0; // Current image index
+        const images = document.querySelectorAll("#slideshow img"); // Select all images
+        const totalImages = images.length;
+
+        // Function to show the next image
+        function showNextImage() {
+            images[currentIndex].classList.remove("active"); // Hide current image
+            currentIndex = (currentIndex + 1) % totalImages; // Move to the next image
+            images[currentIndex].classList.add("active"); // Show next image
+        }
+
+        // Start the slideshow
+        const intervalId = setInterval(showNextImage, 3000); // Change image every 3 seconds
+
+        // Handle potential loading issues
+        images.forEach((image) => {
+            image.onload = () => {
+                console.log(`${image.alt} loaded successfully`);
+            };
+            image.onerror = () => {
+                console.error(`Error loading image: ${image.alt}`);
+                image.src = "placeholder.jpg"; // Fallback image
+            };
+        });
+    </script>
+</body>
+</html> 
+----------------------------------------------------------------------------------------------------------------------
+Cyber MAP
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive World Map - Cyber Attacks</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px;
+            padding: 20px;
+            background: #1e1e1e; /* Darker container background */
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            text-align: center;
+            color: #00bcd4; /* Cyan color for headings */
+            margin-bottom: 20px;
+        }
+        #map {
+            height: 600px;
+            width: 100%;
+            border-radius: 12px;
+            border: 2px solid #333; /* Dark border for the map */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .info-box {
+            display: none;
+            position: absolute;
+            background-color: #2c2c2c; /* Dark background for info box */
+            border: 1px solid #444; /* Darker border */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            max-width: 300px;
+            z-index: 1000;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .info-box.active {
+            display: block;
+            opacity: 1;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            color: #00bcd4; /* Cyan color for info box headings */
+        }
+        .info-box p {
+            margin: 0;
+            color: #bbb; /* Light grey for info box text */
+        }
+        .close-btn {
+            background: #dc3545; /* Red background */
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            transition: background 0.3s;
+        }
+        .close-btn:hover {
+            background: #c82333; /* Darker red on hover */
+        }
+        @media (max-width: 768px) {
+            #map {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive World Map - Cyber Attacks</h1>
+        <div id="map"></div>
+        <div id="info-box" class="info-box">
+            <button class="close-btn" onclick="closeInfoBox()">Close</button>
+            <h3 id="info-title"></h3>
+            <p id="info-content"></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map("map").setView([0, 0], 2);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            maxZoom: 18,
+            attribution: "© OpenStreetMap",
+            // Add a dark-themed tile layer
+            url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
+        }).addTo(map);
+        
+        // Hardcoded data for cyber attacks in various countries
+        var attackDetails = {
+            "United States": "Recent major attacks include the SolarWinds hack affecting multiple agencies and companies.",
+            "China": "Reports of cyber espionage targeting various sectors including technology and defense.",
+            "Russia": "Notable incidents include interference in foreign elections and attacks on critical infrastructure.",
+            "India": "Cyber attacks targeting financial institutions and government agencies have been reported.",
+            "Brazil": "Increased cybercrime incidents and ransomware attacks affecting various industries.",
+            "Germany": "Notable breaches in data security involving major corporations and government entities.",
+            "France": "Recent attacks include data breaches in several high-profile companies and institutions.",
+            "Japan": "Cyber attacks targeting financial and technology sectors have been reported.",
+            "South Korea": "Frequent incidents of cyber espionage and attacks on critical infrastructure.",
+            "Australia": "Increased incidents of phishing and ransomware affecting businesses and individuals.",
+        };
+
+        function onMapClick(e) {
+            var latlng = e.latlng;
+            var country = getCountryFromLatLng(latlng);
+            if (country && attackDetails[country]) {
+                showInfoBox(country, attackDetails[country], latlng);
+            } else {
+                showInfoBox("Unknown Country", "No cyber attack data available for this location.", latlng);
+            }
+        }
+
+        function getCountryFromLatLng(latlng) {
+            var countries = {
+                "United States": [37.0902, -95.7129],
+                "China": [35.8617, 104.1954],
+                "Russia": [61.524, 105.3188],
+                "India": [20.5937, 78.9629],
+                "Brazil": [-14.235, -51.9253],
+                "Germany": [51.1657, 10.4515],
+                "France": [46.6034, 1.8883],
+                "Japan": [36.2048, 138.2529],
+                "South Korea": [35.9078, 127.7669],
+                "Australia": [-25.2744, 133.7751],
+            };
+            var nearestCountry = null;
+            var minDist = Infinity;
+            for (var country in countries) {
+                var coord = countries[country];
+                var dist = getDistance(latlng.lat, latlng.lng, coord[0], coord[1]);
+                if (dist < minDist) {
+                    minDist = dist;
+                    nearestCountry = country;
+                }
+            }
+            return nearestCountry;
+        }
+
+        function getDistance(lat1, lon1, lat2, lon2) {
+            var R = 6371; // Radius of Earth in km
+            var dLat = (lat2 - lat1) * (Math.PI / 180);
+            var dLon = (lon2 - lon1) * (Math.PI / 180);
+            var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                    Math.cos(lat1 * (Math.PI / 180)) *
+                    Math.cos(lat2 * (Math.PI / 180)) *
+                    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+            var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            var distance = R * c; // Distance in km
+            return distance;
+        }
+
+        function showInfoBox(title, content, latlng) {
+            var infoBox = document.getElementById("info-box");
+            document.getElementById("info-title").textContent = title;
+            document.getElementById("info-content").textContent = content;
+            infoBox.style.left = window.innerWidth / 2 - infoBox.clientWidth / 2 + "px";
+            infoBox.style.top = window.innerHeight / 2 - infoBox.clientHeight / 2 + "px";
+            infoBox.classList.add("active");
+        }
+
+        function closeInfoBox() {
+            document.getElementById("info-box").classList.remove("active");
+        }
+
+        map.on("click", onMapClick);
+    </script>
+</body>
+</html>
+--------------------------------------------------------------------------------------
+MCQ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Security Quiz</title>
+    <style>
+        body {
+            background-color: #02000d; /* Dark background */
+            color: #f1d2b6; /* Light text */
+            font-family: "Courier New", Courier, monospace;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeIn 1s;
+        }
+        .question {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #d9aa90; /* Border color */
+            border-radius: 5px;
+            text-align: left;
+            animation: slideIn 0.5s;
+        }
+        input[type="radio"] {
+            margin-right: 10px; /* Space between radio button and label */
+        }
+        button {
+            background-color: #d9aa90; /* Button background */
+            color: #02000d; /* Button text color */
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.2s, transform 0.1s;
+            animation: pulse 1s infinite;
+        }
+        button:hover {
+            background-color: #a65e46; /* Lighter on hover */
+        }
+        #timer {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Security Quiz</h1>
+    <div id="timer">Time Left: <span id="time">60</span> seconds</div>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. What does HTTPS stand for?</p>
+            <label><input type="radio" name="q1" value="A" /> A) Hypertext Transfer Protocol Secure</label><br />
+            <label><input type="radio" name="q1" value="B" /> B) Hypertext Transfer Protocol Standard</label><br />
+            <label><input type="radio" name="q1" value="C" /> C) Hypertext Transport Protocol Secure</label><br />
+            <label><input type="radio" name="q1" value="D" /> D) Hyper Transfer Protocol Secure</label><br />
+        </div>
+        <div class="question">
+            <p>2. What is a common method to protect against SQL injection?</p>
+            <label><input type="radio" name="q2" value="A" /> A) Input validation</label><br />
+            <label><input type="radio" name="q2" value="B" /> B) Regular expressions</label><br />
+            <label><input type="radio" name="q2" value="C" /> C) Obfuscation</label><br />
+            <label><input type="radio" name="q2" value="D" /> D) None of the above</label><br />
+        </div>
+        <div class="question">
+            <p>3. What is a phishing attack?</p>
+            <label><input type="radio" name="q3" value="A" /> A) An attempt to steal sensitive information by disguising as a trustworthy entity</label><br />
+            <label><input type="radio" name="q3" value="B" /> B) A method to encrypt data</label><br />
+            <label><input type="radio" name="q3" value="C" /> C) A technique to speed up internet connection</label><br />
+            <label><input type="radio" name="q3" value="D" /> D) A type of malware</label><br />
+        </div>
+        <div class="question">
+            <p>4. What is two-factor authentication (2FA)?</p>
+            <label><input type="radio" name="q4" value="A" /> A) Using two passwords</label><br />
+            <label><input type="radio" name="q4" value="B" /> B) An additional security layer that requires two forms of identification</label><br />
+            <label><input type="radio" name="q4" value="C" /> C) A method to secure Wi-Fi networks</label><br />
+            <label><input type="radio" name="q4" value="D" /> D) None of the above</label><br />
+        </div>
+        <div class="question">
+            <p>5. What is the primary purpose of a firewall?</p>
+            <label><input type="radio" name="q5" value="A" /> A) To speed up the network</label><br />
+            <label><input type="radio" name="q5" value="B" /> B) To block unauthorized access</label><br />
+            <label><input type="radio" name="q5" value="C" /> C) To monitor internet traffic</label><br />
+            <label><input type="radio" name="q5" value="D" /> D) To encrypt data</label><br />
+        </div>
+        <div class="question">
+            <p>6. Which of the following is a strong password?</p>
+            <label><input type="radio" name="q6" value="A" /> A) 123456</label><br />
+            <label><input type="radio" name="q6" value="B" /> B) password</label><br />
+            <label><input type="radio" name="q6" value="C" /> C) P@ssW0rd123!</label><br />
+            <label><input type="radio" name="q6" value="D" /> D) abcdefgh</label><br />
+        </div>
+        <div class="question">
+            <p>7. What is cross-site scripting (XSS)?</p>
+            <label><input type="radio" name="q7" value="A" /> A) A way to secure a website</label><br />
+            <label><input type="radio" name="q7" value="B" /> B) An attack that allows an attacker to inject malicious scripts into webpages</label><br />
+            <label><input type="radio" name="q7" value="C" /> C) A method to increase website traffic</label><br />
+            <label><input type="radio" name="q7" value="D" /> D) None of the above</label><br />
+        </div>
+        <div class="question">
+            <p>8. What is a secure way to store passwords?</p>
+            <label><input type="radio" name="q8" value="A" /> A) Plain text files</label><br />
+            <label><input type="radio" name="q8" value="B" /> B) Hashing with salt</label><br />
+            <label><input type="radio" name="q8" value="C" /> C) In the browser's local storage</label><br />
+            <label><input type="radio" name="q8" value="D" /> D) None of the above</label><br />
+        </div>
+        <div class="question">
+            <p>9. What does "malware" refer to?</p>
+            <label><input type="radio" name="q9" value="A" /> A) Software that protects against viruses</label><br />
+            <label><input type="radio" name="q9" value="B" /> B) Malicious software designed to harm or exploit any programmable device</label><br />
+            <label><input type="radio" name="q9" value="C" /> C) A method to secure networks</label><br />
+            <label><input type="radio" name="q9" value="D" /> D) None of the above</label><br />
+        </div>
+        <div class="question">
+            <p>10. Which protocol is used for secure data transfer over the internet?</p>
+            <label><input type="radio" name="q10" value="A" /> A) FTP</label><br />
+            <label><input type="radio" name="q10" value="B" /> B) HTTP</label><br />
+            <label><input type="radio" name="q10" value="C" /> C) SFTP</label><br />
+            <label><input type="radio" name="q10" value="D" /> D) SMTP</label><br />
+        </div>
+        <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+    <script>
+        let timeLeft = 60; // 60 seconds countdown
+        const timerElement = document.getElementById("time");
+        const countdownTimer = setInterval(() => {
+            if (timeLeft <= 0) {
+                clearInterval(countdownTimer);
+                alert("Time is up! Submitting the quiz now.");
+                document.getElementById("quizForm").submit();
+            } else {
+                timerElement.innerText = timeLeft;
+                timeLeft--;
+            }
+        }, 1000);
+        function submitQuiz() {
+            clearInterval(countdownTimer);
+            alert("Quiz submitted!");
+            document.getElementById("quizForm").submit();
+        }
+    </script>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+Social Media Web Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Web Social Media</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background */
+            color: #d89b65; /* Light text */
+            font-family: "Orbitron", sans-serif; /* Futuristic font */
+            margin: 0;
+            padding: 50px;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in; /* Fade-in effect */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            animation: slideDown 0.5s ease-out; /* Slide down effect */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            animation: fadeIn 1s ease-in; /* Fade-in effect */
+        }
+
+        #image {
+            max-width: 100%;
+            border: 2px solid #00ff00; /* Neon green border */
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.7); /* Neon glow */
+            border-radius: 10px; /* Rounded corners */
+            transition: transform 0.5s ease; /* Transform effect */
+        }
+
+        #image:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+        }
+
+        #datetime {
+            margin: 20px 0;
+            font-size: 1.5em;
+            animation: fadeIn 1s ease-in; /* Fade-in effect */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #ccc; /* Light gray text */
+            animation: fadeIn 1s ease-in; /* Fade-in effect */
+        }
+
+        .profile-card {
+            background-color: #272401; /* Dark card background */
+            border: 2px solid #00ff00; /* Neon green border */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            box-shadow: 0 0 25px rgba(0, 255, 0, 0.5); /* Neon glow */
+            max-width: 400px; /* Increased width */
+            margin: 20px auto;
+            display: flex; /* Flexbox for alignment */
+            flex-direction: column; /* Vertical layout */
+            align-items: center; /* Center items */
+            transition: transform 0.5s ease; /* Transform effect */
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+
+        .profile-card img {
+            border-radius: 50%; /* Circular profile photo */
+            border: 2px solid #00ff00; /* Neon green border */
+            width: 100px; /* Fixed width */
+            height: 100px; /* Fixed height */
+            object-fit: cover; /* Cover the area */
+            margin-bottom: 15px; /* Space below the photo */
+            animation: fadeIn 1s ease-in; /* Fade-in effect */
+        }
+
+        .profile-card h3 {
+            margin: 0;
+            font-size: 1.8em; /* Larger font for name */
+            color: #00ff00; /* Neon green */
+            animation: fadeIn 1s ease-in; /* Fade-in effect */
+        }
+
+        .profile-card p {
+            margin: 5px 0;
+            color: #ccc; /* Light gray text */
+            text-align: center; /* Center align text */
+            animation: fadeIn 1s ease-in; /* Fade-in effect */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dark Web Social Media</h1>
+        <h2>Connect with fellow hackers</h2>
+    </header>
+    <div class="container">
+        <div class="left">
+            <img id="image" src="https://i.pinimg.com/474x/b3/08/00/b3080093b3b048369e2bb26bb54775c3.jpg" alt="Slideshow" />
+            <div id="datetime"></div>
+        </div>
+        <!-- Profile Card -->
+        <div class="right">
+            <div class="profile-card">
+                <img src="https://i.pinimg.com/474x/b3/08/00/b3080093b3b048369e2bb26bb54775c3.jpg" alt="Profile Photo" />
+                <h3>Hacker_Garlic</h3>
+                <p><strong>Handle:</strong> ZOMBIEHACKER</p>
+                <p><strong>Bio:</strong> Make the World a Better Place</p>
+                <p><strong>Location:</strong> The Infinity</p>
+                <p><strong>Status:</strong> Online</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Disclaimer: This site is for educational purposes only.</p>
+    </footer>
+    <script>
+        let images = [“Image_1”,” Image_2”,” Image_3”]// Array of image URLs
+        let index = 0;
+
+        function changeImage() {
+            document.getElementById("image").src = images[index];
+            index = (index + 1) % images.length; // Cycle through the images
+        }
+
+        function updateDateTime() {
+            const now = new Date();
+            const date = now.toLocaleDateString(); // Get current date
+            const time = now.toLocaleTimeString(); // Get current time
+            document.getElementById("datetime").innerText = `${date} ${time}`; // Update the webpage
+        }
+
+        // Call the functions initially
+        changeImage();
+        updateDateTime();
+        setInterval(changeImage, 5000); // Change image every 5 seconds
+        setInterval(updateDateTime, 30000); // Update time every 30 seconds
+    </script>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Home Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Infant Andreas - Cybersecurity Engineer</title>
+<style>
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+header {
+    background-color: #1c3f94;
+    color: #ffcc00;
+    padding: 2rem 0;
+    text-align: center;
+}
+nav {
+    margin: 1rem 0;
+    text-align: center;
+}
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #e0e0e0;
+}
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1c3f94;
+    color: #ffcc00;
+    margin-top: 2rem;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+h2 {
+    color: #66ff66;
+}
+ul {
+    list-style-type: square;
+    padding: 0;
+}
+li {
+    margin: 0.5rem 0;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Infant Andreas</h1>
+<p>Cybersecurity Engineer</p>
+</header>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</nav>
+<section id="about">
+<h2>About Me</h2>
+<p>
+Welcome to my personal home page. I am Infant Andreas, a dedicated cybersecurity
+engineer with a passion for securing digital assets and protecting
+information. With a B.Tech/B.E. in progress from BS Abdur Rahman
+University, Chennai, I have developed strong skills in cybersecurity,
+incident response, Linux, SQL, C, Assembly, etc.
+</p>
+</section>
+<section id="skills">
+<h2>Key Skills</h2>
+<ul>
+<li>Cybersecurity</li>
+<li>Assembly</li>
+<li>C</li>
+<li>SQL</li>
+<li>Python</li>
+<li>Project Management</li>
+<li>Leadership</li>
+<li>Reverse Engineering</li>
+<li>Malware Analysis</li>
+<li>Linux</li>
+</ul>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<ul>
+<li>
+<strong>Low-Level Programming and Reverse Engineering:</strong>
+Implemented and optimized low-level programming techniques for
+performance-critical applications. Expertise in reverse engineering to
+analyze and understand software and hardware interactions.
+</li>
+<li>
+<strong>Malware Analysis:</strong>
+Conducted in-depth analysis of malware to understand its behavior and
+develop strategies for detection and prevention. Utilized various
+tools and techniques for dynamic and static analysis.
+</li>
+</ul>
+</section>
+<section id="certifications">
+<h2>Certifications</h2>
+<ul>
+<li>CompTIA Security+</li>
+<li>CompTIA CySA+</li>
+<li>Certified Cloud Security Professional (CCSP)</li>
+<li>Certified Ethical Hacker (CEH)</li>
+<li>Certified Information Systems Security Professional (CISSP)</li>
+<li>Certified Information Security Manager (CISM)</li>
+<li>Certified Information Systems Auditor (CISA)</li>
+</ul>
+</section>
+<section id="contact">
+<h2>Contact Me</h2>
+<p>
+Email:
+<a href="mailto:infantandreaschennai@gmail.com" style="color: #ffcc00">infantandreaschennai@gmail.com</a>
+</p>
+<p>Phone: (+91) 7418253XX5</p>
+<p>Location: Chennai, India</p>
+</section>
+<footer>
+<p>&copy; 2024 Infant Andreas. All rights reserved.</p>
+</footer>
+</body>
+</html>
+-----------------------------------------------------------------------------------------------------------------
+Time Table
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Timetable 2024-25</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Dark background */
+            color: #e0e0e0; /* Light gray text */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2a2a2a; /* Darker container */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th,
+        td {
+            border: 1px solid #b5896c; /* Camel color for borders */
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #3c3c3c; /* Dark gray for headers */
+            color: #b5896c; /* Camel color for header text */
+        }
+        td {
+            background-color: #2a2a2a; /* Darker gray for table cells */
+        }
+        header,
+        section {
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #b5896c; /* Camel color for main title */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #b5896c; /* Camel color for section headings */
+            border-bottom: 2px solid #b5896c; /* Underline */
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        h2:hover {
+            color: #8c6a4a; /* Darker camel color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Time Table for the Academic Year 2024-25 (Odd Semester)</h1>
+        </header>
+        <section>
+            <h2>B.Tech. CSE - V Semester</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 - 09:50 AM</td>
+                        <td>CSD 3131</td>
+                        <td>GED 3101</td>
+                        <td>CSD 3102</td>
+                        <td>CSE Lab</td>
+                        <td>CSD 3107</td>
+                    </tr>
+                    <tr>
+                        <td>09:50 - 10:40 AM</td>
+                        <td>SEM</td>
+                        <td>ES 102</td>
+                        <td>CSD 304</td>
+                        <td>CSD 3105/06</td>
+                        <td>SEM</td>
+                    </tr>
+                    <tr>
+                        <td>10:40 - 11:00 AM</td>
+                        <td colspan="5">Tea Break</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 - 11:50 AM</td>
+                        <td>CSD 3131/05</td>
+                        <td>ES 102</td>
+                        <td>CSD 3131</td>
+                        <td>ES 102</td>
+                        <td>ES 102</td>
+                    </tr>
+                    <tr>
+                        <td>11:50 AM - 12:40 PM</td>
+                        <td></td>
+                        <td>ES 102</td>
+                        <td>CSD 3104</td>
+                        <td>ES 102</td>
+                        <td>ES 102</td>
+                    </tr>
+                    <tr>
+                        <td>12:40 - 01:40 PM</td>
+                        <td colspan="5">Lunch Break</td>
+                    </tr>
+                    <tr>
+                        <td>01:40 - 02:30 PM</td>
+                        <td>CSD 3104</td>
+                        <td>CSD 304</td>
+                        <td>CSD 3101</td>
+                        <td>Prayer</td>
+                        <td>ES 102</td>
+                    </tr>
+                    <tr>
+                        <td>02:30 - 03:20 PM</td>
+                        <td>CSDX 108/111/113</td>
+                        <td>SEM</td>
+                        <td></td>
+                        <td>ES 102</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>03:20 - 04:10 PM</td>
+                        <td>LIB</td>
+                        <td>LIB</td>
+                        <td>LIB</td>
+                        <td>CSD 3131/3106</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Course Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>THEORY/Lab</th>
+                        <th>Credits</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CSD 3101</td>
+                        <td>THEORY of Computation</td>
+                        <td>THEORY</td>
+                        <td>3</td>
+                        <td>Mrs. C. Jeeva</td>
+                    </tr>
+                    <tr>
+                        <td>CSD 3102</td>
+                        <td>Artificial Intelligence</td>
+                        <td>THEORY</td>
+                        <td>3</td>
+                        <td>Mrs. P. Valarmathi</td>
+                    </tr>
+                    <tr>
+                        <td>CSD 3104</td>
+                        <td>Data Mining and Data Warehousing</td>
+                        <td>THEORY</td>
+                        <td>3</td>
+                        <td>Dr. Sharon Priya</td>
+                    </tr>
+                    <tr>
+                        <td>CSD 3131</td>
+                        <td>Web and Mobile Application Security</td>
+                        <td>THEORY</td>
+                        <td>4</td>
+                        <td>Mrs. S. Delhirani</td>
+                    </tr>
+                    <tr>
+                        <td>CSDX 108</td>
+                        <td>Computer Vision</td>
+                        <td>THEORY</td>
+                        <td>3</td>
+                        <td>Dr. Arularasan</td>
+                    </tr>
+                    <tr>
+                        <td>CSDX 111</td>
+                        <td>Foundation on Robotics</td>
+                        <td>THEORY</td>
+                        <td>3</td>
+                        <td>Dr. X. Arputha Rathina</td>
+                    </tr>
+                    <tr>
+                        <td>CSDX 113</td>
+                        <td>Essentials of Data Science</td>
+                        <td>THEORY</td>
+                        <td>3</td>
+                        <td>Mr. R. Ram Deepak</td>
+                    </tr>
+                    <tr>
+                        <td>CSDX 304</td>
+                        <td>IT Security Engineering</td>
+                        <td>THEORY</td>
+                        <td>3</td>
+                        <td>Mrs. C. Tamilarasi</td>
+                    </tr>
+                    <tr>
+                        <td>CSD 3105</td>
+                        <td>Internet and Web Programming Laboratory</td>
+                        <td>Lab</td>
+                        <td>1</td>
+                        <td>Dr. S. Subhashni</td>
+                    </tr>
+                    <tr>
+                        <td>CSD 3106</td>
+                        <td>AI and ML Laboratory</td>
+                        <td>Lab</td>
+                        <td>1</td>
+                        <td>Mrs. P. Valarmathi</td>
+                    </tr>
+                    <tr>
+                        <td>CSD 3107</td>
+                        <td>Internship I</td>
+                        <td>Lab</td>
+                        <td>1</td>
+                        <td>Mrs. P. Valarmathi</td>
+                    </tr>
+                    <tr>
+                        <td>GED 3101</td>
+                        <td>Communication Skills for Career Success</td>
+                        <td>Lab</td>
+                        <td>1</td>
+                        <td>Dr. Sweta Ravindran</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------
+Job Application
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #192231; /* Dark background */
+            color: #eddbcd; /* Light text */
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        header {
+            background-color: #c0b283; /* Light Camel color */
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 1s;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #404a42; /* Darker section background */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s;
+        }
+
+        h2 {
+            color: #c0b283; /* Camel color for headings */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #c0b283;
+            border-radius: 5px;
+            background-color: #f4f4f4; /* Light background for inputs */
+            color: #192231; /* Dark text for inputs */
+            transition: border 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #eddbcd; /* Change border color on focus */
+            outline: none;
+        }
+
+        button {
+            background-color: #c0b283;
+            color: #192231;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #eddbcd; /* Lightens on hover */
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cyber Security Job Application Form</h1>
+    </header>
+    <div class="container">
+        <h2>Apply for Your Dream Job</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required />
+
+            <label for="resume">Upload Your Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required />
+
+            <label for="message">Cover Letter:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html> 
+--------------------------------------------------------------------------------------------------------------------------
+Jdoodle
+1.HTML  
+  <!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Hacker Themed Website</title>  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+    <div class="container">  
+        <h1 class="hacker-title">Welcome to the Hacker Zone</h1>  
+        <p class="hacker-text">Type fast, think faster, hack the planet.</p>  
+        <button class="hacker-button" onclick="showAlert()">Hack Now</button>     
+</div>  
+  
+    <script src="script.js"></script>  
+</body>  
+</html>  
+  
+  
+  
+  2.CSS  
+  /* style.css */  
+body {     
+margin: 0;  
+    font-family: 'Courier New', Courier, monospace;     background
+color: black;  
+  
+ 
+  
+    color: #00ff00;     
+display: flex;     justify
+content: center;     align
+items: center;     height: 
+100vh;  
+}  
+  
+.container {     text
+align: center;  
+}  
+  
+.hacker-title {     font-size: 3rem;     
+margin-bottom: 1rem;     text
+shadow: 0 0 10px #00ff00;  
+}  
+  
+.hacker-text {     font-size: 
+1.5rem;     margin-bottom: 
+2rem;     text-shadow: 0 0 5px 
+#00ff00;  
+}  
+  
+.hacker-button {     padding: 
+10px 20px;     font-size: 
+1.2rem;     color: black;     
+background-color: #00ff00;     
+border: none;     border
+radius: 5px;  
+  
+ 
+  
+    cursor: pointer;     transition: 
+background-color 0.3s ease;  
+}  
+  
+.hacker-button:hover {     background
+color: #009900;  
+}  
+  
+  
+  3.JavaScript  
+  
+// script.js function showAlert() {     
+alert("Access Granted! Initiating Hack...");
+---------------------------------------------------
